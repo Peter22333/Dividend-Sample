@@ -1,0 +1,676 @@
+/* GENERAL */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0b0f0c;
+    color: #ccc;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* logo left, others right */
+    align-items: center;
+    text-align: center;
+    padding: 15px 30px;
+    background: #111;
+}
+
+.logo {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #32ff32;
+}
+
+.nav-center {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Right side (buttons + hamburger) */
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ccc;
+    transition: color 0.3s ease;
+}
+.nav-links a:hover {
+    color: #32ff32;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-buttons a,
+.mobile-buttons a {
+    padding: 8px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.btn-outline {
+    border: 1px solid #32ff32;
+    color: #32ff32;
+}
+.btn-outline:hover {
+    background: #32ff32;
+    color: #000;
+}
+
+.btn-primary {
+    background: #32ff32;
+    color: #000;
+}
+.btn-primary:hover {
+    background: #28cc28;
+}
+
+/* HAMBURGER */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: #32ff32;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+/* MOBILE MENU */
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background: #111;
+    padding: 20px;
+}
+.mobile-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.mobile-menu ul li {
+    margin: 15px 0;
+}
+.mobile-menu ul a {
+    text-decoration: none;
+    color: #ccc;
+    font-size: 1.1rem;
+}
+.mobile-menu ul a:hover {
+    color: #32ff32;
+}
+.mobile-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+}
+/* HERO */
+.how-it-works {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.how-it-works h1 {
+    font-size: 2rem;
+    color: #32ff32;
+    margin-bottom: 10px;
+}
+
+.how-it-works p {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    color: #aaa;
+}
+
+/* STEPS */
+.steps {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.step {
+    background: #111;
+    padding: 25px;
+    border-radius: 12px;
+    flex: 1 1 280px;
+    max-width: 320px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.step:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(50, 255, 50, 0.4);
+}
+
+.step-number {
+    width: 30px;
+    height: 30px;
+    background: #32ff32;
+    color: #000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+    font-weight: bold;
+}
+
+.step h2 {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.step p {
+    font-size: 0.95rem;
+    color: #bbb;
+}
+
+.highlight {
+    display: block;
+    margin-top: 10px;
+    color: #32ff32;
+    font-size: 0.9rem;
+}
+/* MY FOOTER */
+.footer {
+    background: #0e1a12;
+    color: #ccc;
+    font-size: 0.95rem;
+}
+.footer .list-unstyled li {
+    margin-bottom: 6px;
+}
+.footer .list-unstyled a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.footer .list-unstyled a:hover {
+    color: #32ff32;
+    text-decoration: underline;
+}
+.logo-icon {
+    background: #32ff32;
+    color: #000;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+.logo-text {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #32ff32;
+}
+.social-icons a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: #ccc;
+}
+.social-icons a:hover {
+    color: #32ff32;
+}
+.soon {
+    background: #333;
+    color: #fff;
+    font-size: 0.7rem;
+    padding: 2px 6px;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+.address {
+    background: #111;
+    padding: 6px 10px;
+    border-radius: 5px;
+    font-family: monospace;
+    word-break: break-all;
+}
+.copy-btn {
+    color: #32ff32;
+    font-weight: bold;
+}
+.copy-btn:hover {
+    text-decoration: underline;
+}
+.disclaimer {
+    font-size: 0.8rem;
+    color: #aaa;
+}
+/*Comuunity style*/
+.community-section {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.community-section h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #00ff66;
+    margin-bottom: 15px;
+}
+
+.community-section p {
+    max-width: 700px;
+    margin: 0 auto 50px auto;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.coming-soon {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+.coming-soon span {
+    display: block;
+    font-weight: normal;
+    color: #bbb;
+    margin-top: 5px;
+}
+
+.card {
+    background-color: #0f1710;
+    border: 1px solid #1a291a;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: left;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    border-color: #00ff66;
+    transform: translateY(-5px);
+}
+
+.card h5 {
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.card p {
+    font-size: 0.95rem;
+    color: #aaa;
+    margin-bottom: 15px;
+}
+
+.btn-outline2 {
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #00ff66;
+    border-radius: 8px;
+    color: #fff;
+    background: transparent;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-outline2:hover {
+    background-color: #00ff66;
+    color: #000;
+}
+/*Ready to earn*/
+.btn-outline3 {
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+    border: 1px solid #00ff66;
+    border-radius: 8px;
+    color: #fff;
+    background: transparent;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+.btn-outline3:hover {
+    background-color: #00ff66;
+    color: #000;
+}
+/*stake section*/
+.staking-section {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.staking-section h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.staking-section h2 span.green {
+    color: #00ff66;
+}
+
+.staking-section h2 span.gold {
+    color: #ffcc00;
+}
+
+.staking-section p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    line-height: 1.6;
+    color: #bbb;
+}
+
+.staking-card {
+    background-color: #0f1710;
+    border: 1px solid #1a291a;
+    border-radius: 12px;
+    padding: 30px;
+    max-width: 650px;
+    margin: 0 auto;
+    color: #fff;
+    text-align: left;
+}
+
+.staking-card h4 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.staking-card p {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 0.95rem;
+    color: #aaa;
+}
+
+.form-control, .form-select {
+    background-color: #0a0f0a;
+    border: 1px solid #1a291a;
+    color: #fff;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #00ff66;
+    box-shadow: none;
+    background-color: #0a0f0a;
+    color: #fff;
+}
+
+.btn-stake {
+    background-color: #00b300;
+    color: #fff;
+    font-weight: bold;
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    transition: background 0.3s ease;
+}
+
+.btn-stake:hover {
+    background-color: #00ff66;
+    color: #000;
+}
+/* Plan stakink */
+.plans-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.plan-card {
+    background: #0f1710;
+    border: 1px solid #1a291a;
+    border-radius: 12px;
+    padding: 30px 20px;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.plan-card:hover {
+    transform: translateY(-8px);
+}
+
+.plan-badge {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #444;
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 5px 15px;
+    border-radius: 15px;
+}
+
+/* Special colors for badges */
+.badge-gold {
+    background: #ffcc00;
+    color: #000;
+}
+.badge-green {
+    background: #00ff66;
+    color: #000;
+}
+.badge-gray {
+    background: #555;
+    color: #ddd;
+}
+
+.plan-card h3 {
+    margin: 20px 0 10px;
+    font-weight: bold;
+}
+
+.plan-card .multiplier {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.plan-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.plan-card ul li {
+    margin: 8px 0;
+    font-size: 0.95rem;
+    position: relative;
+    padding-left: 20px;
+}
+
+.plan-card ul li::before {
+    content: "•";
+    color: #00ff66;
+    font-size: 1.2rem;
+    position: absolute;
+    left: 0;
+    top: -2px;
+}
+
+.btn-plan {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    border: none;
+    transition: 0.3s ease;
+}
+
+/* Button colors */
+.btn-gold {
+    background: #ffcc00;
+    color: #000;
+}
+.btn-gold:hover {
+    background: #ffdb4d;
+}
+
+.btn-green {
+    background: #00ff66;
+    color: #000;
+}
+.btn-green:hover {
+    background: #33ff85;
+}
+
+.btn-dark {
+    background: #222;
+    color: #fff;
+}
+.btn-dark:hover {
+    background: #444;
+}
+
+/* Glow effects */
+.glow-gold {
+    box-shadow: 0 0 25px #ffcc00;
+}
+
+.glow-green {
+    box-shadow: 0 0 25px #00ff66;
+}
+/* How staking works*/
+.features {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.features .icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #00ff66;
+}
+
+.features h5 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.staking-box {
+    background: #0f1710;
+    border: 1px solid #2c3c2c;
+    border-radius: 12px;
+    padding: 30px;
+}
+
+.staking-box h4 {
+    font-weight: bold;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1.4rem;
+}
+
+.staking-box h4 i {
+    color: #00ff66;
+}
+
+.staking-box h6 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.staking-box p {
+    font-size: 0.95rem;
+    color: #ddd;
+}
+
+@media (max-width: 768px) {
+.staking-box {
+    padding: 20px;
+}
+.staking-box h4 {
+    font-size: 1.2rem;
+}
+}
+
+@media (max-width: 991px) {
+.plan-card {
+    margin-bottom: 30px;
+}
+}
+
+@media (max-width: 768px) {
+.staking-section h2 {
+    font-size: 2rem;
+}
+.staking-card {
+    padding: 20px;
+}
+}
+/* RESPONSIVE */
+@media (max-width: 992px) {
+.nav-links, .nav-buttons {
+    display: none;
+}
+.hamburger {
+    display: flex;
+}
+.mobile-menu.active {
+    display: flex;
+    animation: slideDown 0.3s ease;
+}
+.footer .row > div {
+    margin-bottom: 25px;
+    text-align: center;
+}
+.footer .social-icons {
+    justify-content: center;
+}
+.footer-bottom {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+}
+
+@keyframes slideDown {
+from { opacity: 0; transform: translateY(-10px); }
+to { opacity: 1; transform: translateY(0); }
+}
+@media (max-width: 768px) {
+    .community-section h2 {
+        font-size: 2rem;
+    }
+    .card {
+        margin-bottom: 20px;
+    }
+}

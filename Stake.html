@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Divi Example</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- NAVBAR -->
+    <nav class="navbar">
+    <div class="logo">DiviDend</div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">How It Works</a></li>
+            <li><a href="#">Flywheel</a></li>
+            <li><a href="Stake.html">Staking</a></li>
+            <li><a href="community.html">Community</a></li>
+        </ul>
+    <div class="nav-buttons">
+        <a href="https://raydium.io/swap/" target="_blank"  class="btn-outline">Buy $DIVIDENDS</a>
+        <a href="#" class="btn-primary">Join Flywheel</a>
+    </div>
+<!-- HAMBURGER -->
+    <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    </nav>
+<!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobile-menu">
+    <ul>
+        <li><a href="#">How It Works</a></li>
+        <li><a href="#">Flywheel</a></li>
+        <li><a href="#">Staking</a></li>
+        <li><a href="#">Community</a></li>
+    </ul>
+    <div class="mobile-buttons">
+        <a href="https://raydium.io/swap/" target="_blank"  class="btn-outline">Buy $DIVIDENDS</a>
+        <a href="#" class="btn-primary">Join Flywheel</a>
+    </div>
+    </div>
+<!--Stake Section -->
+<section class="staking-section">
+    <h2><span class="green">Stake</span> for <span class="gold">Boosted Rewards</span></h2>
+        <p>$DIVIDENDS is the first ever coin on PumpFun that you can stake to generate more passive income.<br>
+        Lock your $DIVIDENDS tokens to earn 5-10x higher dividend rates. The longer you stake, the more you earn.</p>
+    <div class="staking-card">
+        <h4>Start Staking</h4>
+        <p>Enter your details below to begin earning enhanced dividends</p>
+    <form>
+    <div class="row g-3 mb-3">
+        <div class="col-md-6">
+            <label for="duration" class="form-label">Staking Duration</label>
+            <select id="duration" class="form-select">
+                <option>Select duration</option>
+                <option>30 Days(10x Mutiplier)</option>
+                <option>14 Days(7x Mutiplier)</option>
+                <option>7 Days(5x Mutiplier)</option>
+            </select>
+        </div>
+        <div class="col-md-6">
+            <label for="amount" class="form-label">Amount to Stake</label>
+            <input type="number" id="amount" class="form-control" placeholder="Enter $DIVIDENDS amount">
+        </div>
+    </div>
+    <div class="mb-3">
+        <label for="wallet" class="form-label">Wallet Address</label>
+        <input type="text" id="wallet" class="form-control" placeholder="Enter your Solana wallet address">
+    </div>
+    <button type="submit" class="btn-stake">Stake Now</button>
+    </form>
+</div>
+</section>
+<section class="plans-section container">
+    <div class="row g-4 justify-content-center">
+<!-- Plan 1 -->
+    <div class="col-md-4">
+    <div class="plan-card glow-gold">
+        <div class="plan-badge badge-gold">Maximum Rewards</div>
+            <div style="font-size: 2rem;">🔒</div>
+            <h3>30 Days</h3>
+            <div class="multiplier" style="color:#ffcc00;">10x</div>
+            <p>Dividend Multiplier</p>
+        <ul>
+            <li>10x Dividend Multiplier</li>
+            <li>Intern "Staking" Chat rights</li>
+            <li>Priority customer support</li>
+        </ul>
+        <button class="btn-plan btn-gold">Choose Plan</button>
+    </div>
+    </div>
+<!-- Plan 2 -->
+    <div class="col-md-4">
+    <div class="plan-card glow-green">
+        <div class="plan-badge badge-green">Most Popular</div>
+            <div style="font-size: 2rem;">🔒</div>
+            <h3>14 Days</h3>
+            <div class="multiplier" style="color:#00ff66;">7x</div>
+            <p>Dividend Multiplier</p>
+        <ul>
+            <li>7x Dividend Multiplier</li>
+            <li>Intern "Staking" Chat rights</li>
+            <li>Priority customer support</li>
+        </ul>
+        <button class="btn-plan btn-green">Choose Plan</button>
+    </div>
+    </div>
+<!-- Plan 3 -->
+<div class="col-md-4">
+    <div class="plan-card glow-green">
+        <div class="plan-badge badge-green">Basic</div>
+            <div style="font-size: 2rem;">🔒</div>
+            <h3>7 Days</h3>
+            <div class="multiplier" style="color:#00ff66;">7x</div>
+            <p>Dividend Multiplier</p>
+        <ul>
+            <li>5x Dividend Multiplier</li>
+            <li>Intern "Staking" Chat rights</li>
+            <li>Beginner friendly</li>
+        </ul>
+        <button class="btn-plan btn-green">Choose Plan</button>
+    </div>
+    </div>
+</div>
+</section>
+<div class="container py-5">
+
+<!-- Top Features -->
+<div class="row text-center mb-5 features">
+    <div class="col-md-4">
+        <div class="icon">🔒</div>
+            <h5>No Wallet Connection</h5>
+            <p>Stake securely without connecting your wallet. Your tokens remain safe in your custody.</p>
+    </div>
+    <div class="col-md-4">
+        <div class="icon">📈</div>
+            <h5>Flexible Terms</h5>
+            <p>Choose your staking duration based on your investment strategy and risk tolerance.</p>
+    </div>
+    <div class="col-md-4">
+        <div class="icon">⏳</div>
+            <h5>Compound Growth</h5>
+            <p>Earned dividends can be automatically reinvested to maximize your long-term returns.</p>
+    </div>
+</div>
+<!-- How Staking Works Box -->
+<div class="staking-box">
+            <h4><i>ℹ️</i> How Staking Works</h4>
+    <div class="row">
+        <div class="col-md-6 mb-4">
+            <h6>What is Staking?</h6>
+            <p>Staking involves locking your $DIVIDENDS tokens for a predetermined period to earn enhanced dividend rewards. The longer you stake, the higher your multiplier and potential earnings.</p>
+        </div>
+        <div class="col-md-6 mb-4">
+            <h6>How Earnings Are Calculated</h6>
+            <p>1% of all trading volume is collected as fees. 70% of these fees are distributed proportionally to stakers based on their share of the total staked supply and chosen multiplier.</p>
+        </div>
+        <div class="col-md-6 mb-4">
+            <h6>Lock Period</h6>
+            <p>Once staked, your tokens are locked for the selected duration. Early withdrawal is not permitted, ensuring commitment and stable rewards for all participants.</p>
+        </div>
+        <div class="col-md-6 mb-4">
+            <h6>Risk Considerations</h6>
+            <p>Staking involves locking funds and potential smart contract risks. Earnings depend on trading volume and market conditions. Only stake what you can afford to lock up.</p>
+        </div>
+        </div>
+    </div>
+</div>
+<!-- FOOTER -->
+<footer class="footer py-5">
+    <div class="container">
+        <div class="row">
+        <!-- About -->
+        <div class="col-md-4 footer-about">
+            <div class="d-flex align-items-center mb-3">
+            <div class="logo-icon">D</div>
+            <span class="logo-text">Dividends</span>
+            </div>
+            <p>Earn rewards by staking and joining our flywheel economy.</p>
+            <div class="social-icons d-flex gap-3 mt-3">
+            <a href="#">🐦</a>
+            <a href="#">💬</a>
+            <a href="#">🐙</a>
+            </div>
+    </div>
+<!-- Links -->
+    <div class="col-md-2">
+        <h6>Quick Links</h6>
+        <ul class="list-unstyled">
+        <li><a href="#">How its Works</a></li>
+        <li><a href="#">Flywheel System</a></li>
+        <li><a href="#">Stacking</a></li>
+        <li><a href="#">Community</a></li>
+        </ul>
+    </div>
+<!-- Resources -->
+    <div class="col-md-2">
+        <h6>Resources</h6>
+        <ul class="list-unstyled">
+        <li><a href="#">Whitepaper<span class="soon">Soon</span></a></li>
+        <li><a href="#">Buy on Raydium</a></li>
+        <li><a href="#">View on Solscan</a></li>
+        <li><a href="#">Governance</a></li>
+        </ul>
+    </div>
+<!-- Contract -->
+    <div class="col-md-4">
+        <h6>Contract</h6>
+        <div class="contract mt-2">
+        <span class="address">CJGDg9WCpKBC8EBLwsBt59Rwp95dr4x2irLYook3pump</span>
+        <button class="btn btn-sm btn-link copy-btn" onclick="copyAddress()">Copy</button>
+        </div>
+    </div>
+    </div>
+    <hr class="my-4">
+    <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center">
+    <span>&copy; 2025 Dividends. All rights reserved.</span>
+    <span class="disclaimer">Not financial advice. Do your own research.</span>
+    </div>
+</div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
